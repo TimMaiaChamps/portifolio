@@ -1,0 +1,61 @@
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#logo {
+
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#texto_um {
+    margin: 2vw;
+}
+
+#botoes_div {
+    margin: 10vw;
+}
+
+.botoes {
+    width: 5vw;
+    height: 4vh;
+    margin: 2vh;
+}
+
+section {
+    width: 1vw;
+    height: 1vh;
+    margin: 20vh;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+#sub_titulo {
+    width: 50vw;
+    height: 1vh;
+    position: absolute;
+    left: 30vw;
+}
+
+#texto {
+    width: 40vw;
+    height: 1vh;
+    position: absolute;
+    left: 30vw;
+}
+
