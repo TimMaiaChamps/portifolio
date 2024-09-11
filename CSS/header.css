@@ -33,29 +33,3 @@ header {
     height: 4vh;
     margin: 2vh;
 }
-
-section {
-    width: 1vw;
-    height: 1vh;
-    margin: 20vh;
-    display: flex;
-    flex-direction: row;
-
-
-}
-
-
-#sub_titulo {
-    width: 50vw;
-    height: 1vh;
-    position: absolute;
-    left: 30vw;
-}
-
-#texto {
-    width: 40vw;
-    height: 1vh;
-    position: absolute;
-    left: 30vw;
-}
-
