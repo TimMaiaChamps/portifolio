@@ -1,31 +1,42 @@
-
 section {
-    width: 1vw;
+    width: 100vw;
     height: 1vh;
     margin: 20vh;
     display: flex;
     flex-direction: row;
-
-
 }
 
 
-#sub_titulo {
-    width: 50vw;
-    height: 1vh;
-    position: absolute;
-    left: 30vw;
-}
 
 #texto {
-    width: 40vw;
-    height: 1vh;
-    position: absolute;
-    left: 30vw;
-    top: 40vh;
-}
-#flex_{
+    
+   
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
 }
 
+#flex {
+    width: 40vw;
+    height: 25vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media (max-width:480px) {
+    .botoes_div {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    }
+}
+
+
+
+  

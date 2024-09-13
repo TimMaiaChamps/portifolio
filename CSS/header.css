@@ -12,7 +12,8 @@ header {
 
 #logo {
 
-
+    width: 10vw;
+    height: 10vh;
 
     display: flex;
     flex-direction: row;
@@ -22,14 +23,43 @@ header {
 
 #texto_um {
     margin: 2vw;
+
+    display: flex;
+    flex-direction: row;
+  
+
 }
+
 
 #botoes_div {
     margin: 10vw;
+
+    display: flex;
+    flex-direction: row;
+   
 }
 
 .botoes {
-    width: 5vw;
-    height: 4vh;
-    margin: 2vh;
+    width: 10vw;
+    height: 6vh;
+    margin: 5vh;
+    font-size: 1vw;
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#icone_baixo {
+    width: 20px;
+    height: 10px;
+    
+
+
+}
+@media(max-width: 490px){
+
+
+
+    
 }
