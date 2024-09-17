@@ -2,7 +2,6 @@ header {
     width: 100vw;
     height: 15vh;
     background-color: aqua;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -12,114 +11,67 @@ header {
 
 #logo {
 
-    width: 9vw;
-    height: 9vh;
-
+    width: 5vw;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-#texto_um {
-    margin: 5vw;
-    width: 5vw;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
+#logo img {
+    width: 100%;
+    height: 100%;
 
 
 }
 
+#textoheader h1 {
 
-#botoes_div {
-    margin: 10vw;
-
-    display: flex;
-    flex-direction: row;
-
+    font-size: 30px;
 }
+
+
 
 .botoes {
-    width: 10vw;
-    height: 6vh;
-    margin: 5vh;
-    font-size: 1vw;
-
+    height: 7vh;
     display: flex;
     flex-direction: row;
-    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
 }
+
+.botoes button h6 {
+    margin: 0;
+    font-size: 10px;
+
+
+}
+
+.botoes button {
+margin: 3vw;
+    border-radius: 50px;
+    transition: transform 0.10s ease-in-out;
+
+}
+
+.botoes button:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+
 
 #icone_baixo {
+
     width: 20px;
     height: 10px;
-
-
-
-}
-
-@media(max-width: 490px) {
-
-    header {
-        width: 100vw;
-        height: 15vh;
-        background-color: aqua;
-    
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    
-    }
-    
-    #logo {
-    
-        width: 9vw;
-        height: 9vh;
-    
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    #texto_um {
-        margin: 5vw;
-        width: 5vw;
-        height: 5vh;
-        display: flex;
-        flex-direction: row;
-    
-    
-    }
-    
-    
-    #botoes_div {
-        margin: 10vw;
-    
-        display: flex;
-        flex-direction: row;
-    
-    }
-    
-    .botoes {
-        width: 10vw;
-        height: 6vh;
-        margin: 5vh;
-        font-size: 1vw;
-    
-        display: flex;
-        flex-direction: row;
-        border-radius: 10px;
-    }
-    
-    #icone_baixo {
-        width: 20px;
-        height: 10px;
-    
-    
-    
-    }
+    transition: transform 0.5s ease-in-out;
 
 }
+
+@media(max-width: 490px) {}
