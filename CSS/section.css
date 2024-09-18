@@ -1,9 +1,14 @@
 section {
     width: 100vw;
-    height: 1vh;
+    height: 80vh;
     margin: 20vh;
     display: flex;
     flex-direction: row;
+}
+ 
+#png_principal {
+    
+margin: 3vw;
 }
 
 #sub_titulo {
@@ -12,6 +17,7 @@ section {
 
 }
 
+
 #texto {
 
     color: antiquewhite;
@@ -19,7 +25,13 @@ section {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+
+    margin: 0vw
+
 }
+
+
+
 
 #flex {
     width: 40vw;
@@ -31,12 +43,51 @@ section {
     justify-content: center;
 }
 
+
 @media (max-width:480px) {
-    .botoes_div {
+    section {
+        width: 100vw;
+        height: 80vh;
+        margin: 20vh;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        height: 100%;
-        width: 100%;
     }
+     
+    #png_principal {
+        
+    margin: 3vw;
+    }
+    
+    #sub_titulo {
+    
+        color: antiquewhite;
+    
+    }
+    
+    
+    #texto {
+    
+        color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    
+        margin: 0vw
+    
+    }
+    
+    
+    
+    
+    #flex {
+        width: 40vw;
+        height: 25vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
 }

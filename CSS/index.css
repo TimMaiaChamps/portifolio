@@ -1,16 +1,17 @@
 @import url(./header.css);
 @import url(./section.css);
+@import url(./footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-    overflow-x: hidden;
-  background-image: url(https://img.freepik.com/fotos-premium/um-fundo-abstrato-preto-e-branco-com-um-fundo-preto_670382-8876.jpg);
+  overflow: hidden;
+  background-image: url(https://cdn.leonardo.ai/users/29fa378b-b552-46e9-a469-86b0b56be2df/generations/4e666d4d-822f-4be0-a020-22126a73f9d0/AlbedoBase_XL_Uma_exploso_abstrata_de_tinta_em_tons_de_cinza_e_0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
-    }
-    
-@media(max-width: 490px) {}
+}
+
+@media(max-width: 480px) { }
