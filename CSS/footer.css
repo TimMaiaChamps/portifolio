@@ -1,0 +1,15 @@
+#iconegit footer {
+    width: 5vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+#iconegit footer {
+    width: 100%;
+    height: 100%;
+}
