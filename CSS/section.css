@@ -6,11 +6,15 @@ section {
     flex-direction: row;
 }
 
+#sub_titulo {
 
+    color: antiquewhite;
+
+}
 
 #texto {
-    
-   
+
+    color: antiquewhite;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -20,7 +24,7 @@ section {
 #flex {
     width: 40vw;
     height: 25vh;
-    
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,13 +34,9 @@ section {
 @media (max-width:480px) {
     .botoes_div {
         display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        width: 100%;
     }
 }
-
-
-
-  
