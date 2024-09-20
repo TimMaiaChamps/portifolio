@@ -8,10 +8,82 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  background-image: url(https://cdn.leonardo.ai/users/29fa378b-b552-46e9-a469-86b0b56be2df/generations/4e666d4d-822f-4be0-a020-22126a73f9d0/AlbedoBase_XL_Uma_exploso_abstrata_de_tinta_em_tons_de_cinza_e_0.jpg);
+  background-image: url('./../assets/img/DALL·E\ 2024-09-20\ 15.31.51\ -\ A\ stylized\ astronaut\ floating\ in\ space\ with\ abstract\ shapes\ and\ colors\,\ matching\ the\ vibrant\ explosion\ of\ colors\ from\ the\ original\ plasma\ image.\ The\ a.webp');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
+  
 }
 
-@media(max-width: 480px) { }
+#blur{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+
+  z-index: -1;
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 12vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #logo img {
+    width: 25vw;
+    margin: 1vw;
+  }
+
+  #textoheader h1 {
+    font-size: 6vw;
+  }
+
+  #botoesm button {
+    margin: 3vw;
+    font-size: 4vw;
+    padding: 2vw;
+  }
+
+  .botoes h6 {
+    font-size: 3vw;
+  }
+
+  .botoes button {
+    margin: 3vw;
+    padding: 2vw;
+  }
+
+  section {
+    flex-direction: column;
+    height: auto;
+    margin: 5vh 0;
+  }
+
+  #png_principal {
+    margin: 5vw;
+    width: 90vw;
+  }
+
+  #flex {
+    width: 90vw;
+    height: auto;
+    margin: 5vw 0;
+  }
+
+  footer {
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    bottom: 0;
+  }
+
+  #git {
+    font-size: 5vh;
+  }
+}

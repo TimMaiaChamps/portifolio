@@ -7,20 +7,19 @@ section {
 }
  
 #png_principal {
-    
-margin: 3vw;
+    width: 40vw;
 }
 
 #sub_titulo {
 
-    color: antiquewhite;
+    color: rgb(245, 241, 241);
 
 }
 
 
 #texto {
 
-    color: antiquewhite;
+    color: rgb(245, 241, 241);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -60,14 +59,14 @@ margin: 3vw;
     
     #sub_titulo {
     
-        color: antiquewhite;
+        color: rgb(245, 241, 241);
     
     }
     
     
     #texto {
     
-        color: antiquewhite;
+        color: rgb(245, 241, 241);
         display: flex;
         flex-direction: row;
         align-items: flex-start;
