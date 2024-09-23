@@ -28,11 +28,8 @@ body {
   z-index: -1;
 }
 
-@media (max-width: 480px) 
+@media (max-width: 480px) {
 
-body {
-  
-  {
   header {
     height: 12vh;
     flex-direction: column;
@@ -86,5 +83,4 @@ body {
   #git {
     font-size: 5vh;
   }
-}
 }
