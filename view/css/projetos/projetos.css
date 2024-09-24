@@ -1,0 +1,11 @@
+@import url(./../header.css);
+@import url(./banners.css);
+
+
+body {
+    overflow-x:hidden;
+    background-image: url(./../../../assets/img/DALL·E\ 2024-09-20\ 15.31.51\ -\ A\ stylized\ astronaut\ floating\ in\ space\ with\ abstract\ shapes\ and\ colors\,\ matching\ the\ vibrant\ explosion\ of\ colors\ from\ the\ original\ plasma\ image.\ The\ a.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}

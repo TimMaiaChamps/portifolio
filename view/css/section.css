@@ -5,7 +5,7 @@ section {
     display: flex;
     flex-direction: row;
 }
- 
+
 #png_principal {
     width: 40vw;
 }
@@ -26,7 +26,6 @@ section {
     justify-content: center;
 
     margin: 0vw
-
 }
 
 
@@ -51,42 +50,41 @@ section {
         display: flex;
         flex-direction: row;
     }
-     
+
     #png_principal {
-        
-    margin: 3vw;
+
+        margin: 3vw;
     }
-    
+
     #sub_titulo {
-    
+
         color: rgb(245, 241, 241);
-    
+
     }
-    
-    
+
+
     #texto {
-    
+
         color: rgb(245, 241, 241);
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: center;
-    
+
         margin: 0vw
-    
     }
-    
-    
-    
-    
+
+
+
+
     #flex {
         width: 40vw;
         height: 25vh;
-    
+
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
     }
-    
+
 }

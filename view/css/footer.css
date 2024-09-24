@@ -10,15 +10,9 @@ footer {
 
 #git {
 
-font-size: 9vh;
+    font-size: 9vh;
 
 }
 
 
-@media (max-width:480px) {
-
-
-
-
-    
-}
+@media (max-width:480px) {}
