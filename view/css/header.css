@@ -47,7 +47,9 @@ header {
 }
 
 .botoes button:hover {
-    transform: scale(1.1);
+    
+    cursor: pointer;
+    width: 10vw;
 }
 
 

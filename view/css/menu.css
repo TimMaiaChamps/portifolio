@@ -1,0 +1,65 @@
+#icon_menu {
+    width: 7.5vh;
+    height: 7.5vh;
+
+
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 10vw;
+    top: 2.5vh;
+
+
+}
+
+#icon_menu div {
+
+    width: 4vw;
+    height: 2vh;
+
+    background-color: rgb(35, 35, 35);
+    border-radius: 2vw;
+    transition: all 0.5s ease-in-out 0.3ms
+}
+
+/* #icon_menu:hover #barra_1 {
+
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0vw;
+
+}
+
+#icon_menu:hover #barra_2 {
+
+    display: none;
+
+}
+
+#icon_menu:hover #barra_3 {
+
+    transform: rotate(315deg);
+    position: absolute;
+    bottom: 0vh;
+    top: 0vh;
+} */
+
+#menu{
+
+width: 100vw;
+height: 25vh;
+
+position: absolute;
+top: 16vh;
+left: 0vw;
+z-index: -1;
+
+background-color: red;
+transition: all 0.3s ease-in-out;
+
+
+
+}

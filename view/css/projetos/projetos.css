@@ -1,6 +1,6 @@
 @import url(./../header.css);
 @import url(./banners.css);
-
+@import url(./../menu.css);
 
 body {
     overflow-x:hidden;
