@@ -1,0 +1,32 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+#cartoes{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+}
+
+
+
+.cartao{
+
+    width: 15vw;
+    height: 25vh;
+    margin: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border-radius: 5%;
+
+    background-color: green ;
+}
