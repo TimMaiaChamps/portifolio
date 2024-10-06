@@ -40,6 +40,12 @@ export function criarCartoes() {
         h3.textContent = cartoes[i].valor
 
 
+        cartao.style.backgroundImage = 'url(${cartoes[i].img})'
+
+
+        let imagem = document.creatElement('img')
+        imagem.className = 'Vandal Anci-fogo'
+        imagem.src = img[i]
 
 
         cartao.appendChild(h1);
@@ -47,10 +53,10 @@ export function criarCartoes() {
         cartao.appendChild(h3);
 
         seactionCartoes.appendChild(cartao);
-   
-   
-       
-   
+
+
+
+
     }
 
 
