@@ -31,22 +31,26 @@ export function criarCartoes() {
 
     for (let i = 0; i < cartoes.length; i++) {
         let cartao = document.createElement('div');
-        cartao.className = 'cartao' 
+        cartao.className = 'cartao'
         let h1 = document.createElement('h1');
         h1.textContent = cartoes[i].nome;
         let img = document.createElement('img');
         img.src = cartoes[i].imagem;
         let h3 = document.createElement('h3');
         h3.textContent = cartoes[i].valor
-        
- 
 
-      
+
+
+
         cartao.appendChild(h1);
         cartao.appendChild(img);
         cartao.appendChild(h3);
 
         seactionCartoes.appendChild(cartao);
+   
+   
+       
+   
     }
 
 
