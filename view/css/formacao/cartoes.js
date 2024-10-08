@@ -39,7 +39,7 @@ export function criarCartoes() {
         let h3 = document.createElement('h3');
         h3.textContent = cartoes[i].valor
         
- cartoes.style.backgroudImage = `url(${cartoes[i].img}`
+//  cartoes.style.backgroudImage = `url(${cartoes[i].img}`
 
       
         cartao.appendChild(h1);
