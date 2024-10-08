@@ -31,7 +31,7 @@ export function criarCartoes() {
 
     for (let i = 0; i < cartoes.length; i++) {
         let cartao = document.createElement('div');
-        cartao.className = 'cartao' 
+        cartao.className = 'cartao'
         let h1 = document.createElement('h1');
         h1.textContent = cartoes[i].nome;
         let img = document.createElement('img');
@@ -41,12 +41,24 @@ export function criarCartoes() {
         
 //  cartoes.style.backgroudImage = `url(${cartoes[i].img}`
 
-      
+
+        cartao.style.backgroundImage = 'url(${cartoes[i].img})'
+
+
+        let imagem = document.creatElement('img')
+        imagem.className = 'Vandal Anci-fogo'
+        imagem.src = img[i]
+
+
         cartao.appendChild(h1);
         cartao.appendChild(img);
         cartao.appendChild(h3);
 
         seactionCartoes.appendChild(cartao);
+
+
+
+
     }
 
 
