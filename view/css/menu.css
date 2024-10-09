@@ -56,10 +56,7 @@ position: absolute;
 top: 16vh;
 left: 0vw;
 z-index: -1;
-
-background-color: red;
+background-image: url(https://cdn.dooca.store/120/brands/max.png?v=1574702553&webp=0);
 transition: all 0.3s ease-in-out;
-
-
 
 }

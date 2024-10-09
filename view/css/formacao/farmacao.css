@@ -3,14 +3,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-/* 
-    background-color: green; */
+
+    background-color: rgb(0, 0, 0);
 
 }
 
 #cartoes{
     display: grid;
-    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
     
 }
 
@@ -20,7 +20,7 @@ body {
 
 .cartao {
 
-    width: 200px;
+    width: 300px;
     height: 200px;
     margin: 1vw;
 
@@ -31,13 +31,20 @@ body {
 
     border-radius: 5%;
 
-    /* background-color: white ; */
+    background-color: white ;
 }
 
 .cartao img {
 
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 
     background-size: cover;
+}
+
+.cartao h3 {
+
+font-size: 180%;
+
+
 }

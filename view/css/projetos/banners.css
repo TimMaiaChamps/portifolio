@@ -5,7 +5,7 @@
 
     position: absolute;
     left: 0;
-
+    top: 50vh;
     display: flex;
     flex-direction: row;
     transition: all 0.4s ease-in-out
@@ -18,10 +18,9 @@
     margin: 0 5vw;
     background-color: red;
 
-
+    
+    
 }
-
-
 
 #bnts_banner {
     width: 10vw;
@@ -29,7 +28,7 @@
 
     position: absolute;
     left: 45vw;
-    top: 52vh;
+    top: 87vh;
 
     display: flex;
     flex-direction: row;
@@ -45,14 +44,14 @@
     border-radius: 50%;
     background-color: white;
     border: none;
-    
+
 }
 
 .btn_banner:hover {
 
-width: 4.5vh;
-height: 4.5vh;
-cursor: pointer;
+    width: 4.5vh;
+    height: 4.5vh;
+    cursor: pointer;
 
 
 }
