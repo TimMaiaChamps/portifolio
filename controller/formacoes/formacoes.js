@@ -1,4 +1,4 @@
-import { criarCartoes } from "../../view/css/formacao/cartoes.js";
+import { criarCartoes } from "../../view/js/formacao/cartoes.js";
 
 window.criarCartoes = criarCartoes
 

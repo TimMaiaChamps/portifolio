@@ -5,10 +5,20 @@ body {
     align-items: center;
 
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+section {
+
+background-image: url(./../../../assets/img/DALL·E\ 2024-10-09\ 13.54.10\ -\ A\ scene\ heavily\ inspired\ by\ the\ visual\ style\ of\ Valorant\,\ set\ in\ a\ futuristic\ urban\ battlefield\ with\ bright\ neon\ lights\,\ sleek\ weapons\,\ and\ tactical\ a.webp);
+
 
 }
 
 #cartoes{
+    width: 100vw;
+    height: 100vh;
+    
     display: grid;
     grid-template-columns: 25vw 25vw 25vw 25vw;
     

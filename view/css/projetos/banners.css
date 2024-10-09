@@ -1,11 +1,13 @@
+
 #banners {
     margin-top: 5vh;
     width: 400vw;
     height: 40vh;
+    
 
     position: absolute;
     left: 0;
-    top: 50vh;
+    top: 38vh;
     display: flex;
     flex-direction: row;
     transition: all 0.4s ease-in-out
@@ -14,12 +16,15 @@
 .banner {
 
     width: 90vw;
-    height: 40vh;
+    height: 45vh;
     margin: 0 5vw;
-    background-color: red;
 
-    
-    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
 }
 
 #bnts_banner {
