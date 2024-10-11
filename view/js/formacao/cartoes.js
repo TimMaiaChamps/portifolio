@@ -11,7 +11,7 @@
 //     { nome: 'VANDAL RGX RED', valor: 'R$17.55', imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIiPTD4N7WU7wvGBzL6iwhYwVvZdrVzuY7HA&s' },
 //     { nome: 'VANDAL LEGO', valor: 'R$13.56', imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfuIQrkynhUKuadl8AQqWPyhfFNz5RnufALw&s' },
 //     { nome: 'VANDAL CHAMPS', valor: 'R$96.20', imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Zql4CRfS7tItvEqKB-oO0RDGi9lmdinZTw&s' },
-    
+
 
 // ];
 
@@ -43,49 +43,50 @@
 
 
 // }
+import { buscarCartoes } from "../../../services/projetos/cartoes_projetos.js";
+import { excluirCartoes } from "../../../services/projetos/cartoes_projetos.js";
 
 
-
-
-
-export async function criarCartoes() {    
+export async function criarCartoes() {
     let seactionCartoes = document.getElementById('cartoes');
-    
+
     // Limpar os cartões antigos antes de adicionar os novos
     seactionCartoes.innerHTML = '';
+    const cartoes = await buscarCartoes();
 
-    try {
-        // Fazer a requisição ao backend para pegar os cartões
-        const response = await fetch('http://localhost:3000/cartoes');
-        
-        // Verificar se a resposta é bem-sucedida
-        if (!response.ok) {
-            throw new Error('Erro ao buscar os cartões do backend');
-        }
+    // Renderizar os cartões no front-end
+    for (let i = 0; i < cartoes.length; i++) {
+        let cartao = document.createElement('div');
+        cartao.className = 'cartao';
+        let h1 = document.createElement('h1');
+        h1.textContent = cartoes[i].nome;
+        let img = document.createElement('img');
+        img.src = cartoes[i].imagem;
+        let h3 = document.createElement('h3');
+        h3.textContent = cartoes[i].valor;
 
-        const cartoes = await response.json();
+        let button = document.createElement('button');
+        button.className = 'button_card';
+        button.textContent = 'EXCLUIR';
+        button.addEventListener('click', () => {
+            excluirCartoes(i)
+        });
 
-        // Renderizar os cartões no front-end
-        for (let i = 0; i < cartoes.length; i++) {
-            let cartao = document.createElement('div');
-            cartao.className = 'cartao';
-            let h1 = document.createElement('h1');
-            h1.textContent = cartoes[i].nome;
-            let img = document.createElement('img');
-            img.src = cartoes[i].imagem;
-            let h3 = document.createElement('h3');
-            h3.textContent = cartoes[i].valor;
+        cartao.appendChild(h1);
+        cartao.appendChild(img);
+        cartao.appendChild(h3);
+        cartao.appendChild(button);
 
-            cartao.appendChild(h1);
-            cartao.appendChild(img);
-            cartao.appendChild(h3);
 
-            seactionCartoes.appendChild(cartao);
-        }
-    } catch (error) {
-        // Exibe o erro no console se algo der errado
-        console.error('Erro no carregamento dos cartões:', error);
+        seactionCartoes.appendChild(cartao);
     }
+
+let cartoesAdd = document.createElement('button');
+cartoesAdd.className = 'cartao';
+cartoesAdd.textContent = '+';
+seactionCartoes.appendChild(cartoesAdd);
+
+
 }
 
 

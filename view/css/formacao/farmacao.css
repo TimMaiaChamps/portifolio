@@ -1,3 +1,5 @@
+@import url(./telaCadastro.css);
+
 body {
 
     display: flex;
@@ -61,3 +63,5 @@ section {
 
 
 }
+
+
