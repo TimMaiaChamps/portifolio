@@ -1,3 +1,35 @@
+app.get('/cartoes'), (req, res)=> {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let footer = document.getElementById("footer")
 let h4 = document.createElement('h4')
 h4.textContent = 'luizhenriquecserpa@gmail.com'

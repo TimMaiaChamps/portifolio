@@ -50,11 +50,10 @@ import { excluirCartoes } from "../../../services/projetos/cartoes_projetos.js";
 export async function criarCartoes() {
     let seactionCartoes = document.getElementById('cartoes');
 
-    // Limpar os cartões antigos antes de adicionar os novos
+
     seactionCartoes.innerHTML = '';
     const cartoes = await buscarCartoes();
 
-    // Renderizar os cartões no front-end
     for (let i = 0; i < cartoes.length; i++) {
         let cartao = document.createElement('div');
         cartao.className = 'cartao';
@@ -81,12 +80,60 @@ export async function criarCartoes() {
         seactionCartoes.appendChild(cartao);
     }
 
-let cartoesAdd = document.createElement('button');
-cartoesAdd.className = 'cartao';
-cartoesAdd.textContent = '+';
-seactionCartoes.appendChild(cartoesAdd);
+    let cartoesAdd = document.createElement('button');
+    cartoesAdd.className = 'cartao';
+    cartoesAdd.textContent = '+';
+    cartoesAdd.addEventListener('click', () => {
+
+        mostraTelaCad();
+
+    })
+    seactionCartoes.appendChild(cartoesAdd);
 
 
 }
 
+export async function excluirCartoes(index) {
 
+    try {
+        const response = await fetch('http:localhost3000/cartoes'
+        method: 'DELETE',
+            headers: {
+            'Content-Type': 'application/json',
+
+    },
+        body: JSON.stringify({ cartao: index }),
+    });
+    criarCartoes();
+
+}
+
+catch (e) {
+
+    console.log(e);
+}
+}
+
+export async function cadastrarCartao(nome, valor, link) {
+
+    try {
+
+        const response = await fetch('http://localhost:3000/cartoes',
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+        },
+            body: JSON.stringify({
+                nome: nome,
+                valor: valor,
+                img: link,
+            }),
+    });
+
+    criarCartoes();
+}
+catch (e) {
+    console.log(e);
+
+}
+}
