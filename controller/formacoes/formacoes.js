@@ -1,6 +1,6 @@
-import { criarCartoes } from "../../view/js/formacao/cartoes.js";
-import { escondeTelaCad } from
-import { recolheDados } from
+import { criarCartoes } from "../../view/js/formacao/cartoes_view.js";
+import { escondeTelaCad } from "./telacad.js"
+import { recolheDados } from "./telacad.js"
 
 window.escondeTelaCad = escondeTelaCad;
 window.esconderecolheDados = recolheDados;

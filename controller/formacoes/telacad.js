@@ -1,8 +1,8 @@
-import { cadastrarCartao } from 
+import { cadastrarCartao } from "../../view/js/formacao/cartoes_view.js";
 
 let telaCad = document.getElementById('telaCadastro');
 export function escondeTelaCad(){
-    telaCad.style.left = '-100';
+    telaCad.style.left = '-100vw';
 }
 export function mostraTelaCad(){
     telaCad.style.left = '0'
