@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,25 +7,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="./../css/formacao/farmacao.css">
     <script type="module" src="./../../controller/formacoes/formacoes.js"> </script>
+    <script type="module" src="./../../controller/projetos/projetos.js"> </script>
 
 <body>
     <section id="cartoes">
+     
     </section>
     <section id="telaCadastro">
 
-        <div id="inputs_cad">
+        <div id="inputs_card">
             <input id="nome" type="text" placeholder="nome">
             <input id="valor" type="text" placeholder="valor">
             <input id="link" type="text" placeholder="link da imagem">
+
+
+
             <div id="butto_telacard">
-                <button> SALVAR </button>
-                <button> CANCELAR </button>
+                <button onclick="recolheDados()">SALVAR</button>
+                <button onclick="escondeTelaCad()">CANCELAR</button>
 
             </div>
         </div>
-
-
-
 
 
     </section>

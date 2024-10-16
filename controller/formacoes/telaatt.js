@@ -1,4 +1,4 @@
-import { atualizarCartao } from "../../view/js/formacao/cartoes_view.js";
+import { atualizarCartao } from "./../../services/projetos/cartoes_projetos.js";
 
 let telaCad = document.getElementById('telaAtt');
 export function escodeTelaAtt(){

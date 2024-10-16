@@ -3,6 +3,11 @@ import { excluirCartoes } from "../../../services/projetos/cartoes_projetos.js";
 import { mostraTelaCad } from "../../../controller/formacoes/telacad.js";
 import { mostraTelaAtt } from "../../../controller/formacoes/telaatt.js";
 
+
+
+
+
+
 export async function criarCartoes() {
     let sectionCartoes = document.getElementById('cartoes');
     sectionCartoes.innerHTML = '';
@@ -10,14 +15,14 @@ export async function criarCartoes() {
     const cartoes = await buscarCartoes();
 
     for (let i = 0; i < cartoes.length; i++) {
-        let cartoes = document.createElement('div');
-        cartoes.className = 'cartao';
+        let cartao = document.createElement('div');
+        cartao.className = 'cartao';
         let h1 = document.createElement('h1');
         h1.textContent = cartoes[i].nome;
         let h3 = document.createElement('h3');
         h3.textContent = cartoes[i].valor;
         let imgTag = document.createElement('img');
-        imgTag.src = cartoes[i].img;
+        imgTag.src = cartoes[i].imagem ;
 
         let div = document.createElement('div');
         div.style.display = 'flex';
@@ -41,13 +46,14 @@ export async function criarCartoes() {
         div.appendChild(button);
         div.appendChild(buttonAtt);
 
-        cartoes.appendChild(h1);
-        cartoes.appendChild(imgTag);
-        cartoes.appendChild(h3);
-        cartoes.appendChild(div);
+        cartao.appendChild(h1);
+        cartao.appendChild(imgTag);
+        cartao.appendChild(h3);
+        cartao.appendChild(div);
 
-        sectionCartoes.appendChild(cartoes);
+        sectionCartoes.appendChild(cartao);
     }
+    
     let cartoesAdd = document.createElement('button');
     cartoesAdd.className = 'cartao';
     cartoesAdd.textContent = '+';
@@ -55,4 +61,5 @@ export async function criarCartoes() {
         mostraTelaCad();
     });
     sectionCartoes.appendChild(cartoesAdd);
+    console.log('ate aqui tudo bem...');
 }

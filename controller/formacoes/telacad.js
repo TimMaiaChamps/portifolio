@@ -1,4 +1,4 @@
-import { cadastrarCartao } from "../../view/js/formacao/cartoes_view.js";
+import { cadastrarCartao } from "./../../services/projetos/cartoes_projetos.js";
 
 let telaCad = document.getElementById('telaCadastro');
 export function escondeTelaCad(){
@@ -20,4 +20,4 @@ nome.value = '';
 valor.value = '';
 link.value = '';
 
-}
+}   
