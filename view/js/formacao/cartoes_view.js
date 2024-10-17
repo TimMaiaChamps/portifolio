@@ -4,10 +4,6 @@ import { mostraTelaCad } from "../../../controller/formacoes/telacad.js";
 import { mostraTelaAtt } from "../../../controller/formacoes/telaatt.js";
 
 
-
-
-
-
 export async function criarCartoes() {
     let sectionCartoes = document.getElementById('cartoes');
     sectionCartoes.innerHTML = '';
@@ -61,5 +57,5 @@ export async function criarCartoes() {
         mostraTelaCad();
     });
     sectionCartoes.appendChild(cartoesAdd);
-    console.log('ate aqui tudo bem...');
+    // console.log('ate aqui tudo bem...');
 }
