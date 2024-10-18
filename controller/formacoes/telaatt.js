@@ -9,14 +9,12 @@ export function mostraTelaAtt(){
 }
 
 export function recolheDadosAtt(id){
-       let nome = document.getElementById('nomeAtt'); 
-       let valor = document.getElementById('valorAtt'); 
+       let nome = document.getElementById('nomeAtt');
        let link = document.getElementById('linkAtt'); 
 
        atualizarCartao(id, nome.value, valor.value, link.value);
        escodeTelaAtt();
 
        nome.value = '';
-       valor.value = '';
        link.value = '';
 }

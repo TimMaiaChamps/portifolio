@@ -5,6 +5,4 @@ export function trocarBanner(numeroBanner){
 
 banners.style.left = '-' + numeroBanner + '00vw'
 
-
-
 }

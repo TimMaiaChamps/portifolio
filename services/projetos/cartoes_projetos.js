@@ -19,7 +19,7 @@ export async function excluirCartoes(index) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ numero: index }),
+            body: JSON.stringify({ index: index }),
         });
         criarCartoes();
     }
