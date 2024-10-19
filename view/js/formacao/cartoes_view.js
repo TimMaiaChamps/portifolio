@@ -16,7 +16,6 @@ export async function criarCartoes() {
         let h1 = document.createElement('h1');
         h1.textContent = cartoes[i].nome;
         let h3 = document.createElement('h3');
-        h3.textContent = cartoes[i].valor;
         let imgTag = document.createElement('img');
         imgTag.src = cartoes[i].imagem ;
 
