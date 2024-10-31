@@ -8,11 +8,12 @@ let telaCad = document.getElementById('telaAtt');
 export function escodeTelaAtt() {
     telaCad.style.right = '-100vw';
 }
-export function mostraTelaAtt() {
+export function mostraTelaAtt(index) {
+    id = index
     telaCad.style.right = '0';
 }
 
-export function recolheDadosAtt(id) {
+export function recolheDadosAtt() {
     let nome = document.getElementById('nomeAtt');
     let link = document.getElementById('linkAtt');
 

@@ -31,7 +31,7 @@ export function recolherDados() {
     if (nome.link === '') {
         alert("nome em branco");
     } else {
-        cadastrarCartao(id, nome.value, link.value);
+        cadastrarCartao(nome.value, link.value);
         escondeTelacad();
 
         nome.value = '';

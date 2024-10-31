@@ -28,7 +28,7 @@ export async function excluirCartoes(index) {
     }
 }
 
-export async function cadastrarCartao(nome, valor, link) {
+export async function cadastrarCartao(nome, imagem) {
     try {
         const response = await fetch('https://backendportifolio.vercel.app/cartoes', {
             method: 'POST',
@@ -36,8 +36,8 @@ export async function cadastrarCartao(nome, valor, link) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                nome: nome,
-                imagem: link,
+                nome,
+                imagem,
             }),
         });
         criarCartoes();
@@ -47,7 +47,7 @@ export async function cadastrarCartao(nome, valor, link) {
     }
 }
 
-export async function atualizarCartao(id, nome, valor, img) {
+export async function atualizarCartao(id, nome, imagem) {
     try {
         const response = await fetch('https://backendportifolio.vercel.app/cartoes', {
             method: 'PUT',
@@ -55,12 +55,12 @@ export async function atualizarCartao(id, nome, valor, img) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                nome: nome,
-                valor: valor,
-                img: img,
-                id: id,
+                nome,
+                imagem,
+                id,
             }),
         });
+        criarCartoes();
     } catch (e) {
         console.log(e);
     }
